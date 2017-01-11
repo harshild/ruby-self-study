@@ -1,10 +1,5 @@
-module MathLib
-    # class Math
-    #     def initialize
-            
-    #     end
-    # end
+class Math
     def add(a,b)
-        return a+b
+        return a + b
     end
 end
