@@ -1,2 +1,2 @@
-# ruby-ss
+# ruby-self-study
 Ruby Self Study
