@@ -15,4 +15,25 @@ class TESTMath < Test::Unit::TestCase
         result = @math.subs(2,8)
         assert_equal(-6 ,result)
     end
+
+    def test_isPrime_positive
+        result = @math.isPrime(13)
+        assert_true(result)
+    end
+
+    def test_isPrime_negative
+        result = @math.isPrime(8)
+        assert_false(result)
+    end
+
+    def test_isPrime_1
+        result = @math.isPrime(1)
+        assert_true(result)
+    end
+    def test_isPrime_LessThan1
+        result = @math.isPrime(0)
+        assert_false(result)
+        result = @math.isPrime(-9)
+        assert_false(result)
+    end
 end
