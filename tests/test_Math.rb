@@ -18,22 +18,22 @@ class TESTMath < Test::Unit::TestCase
 
     def test_isPrime_positive
         result = @math.isPrime(13)
-        assert_true(result)
+        assert_equal(true,result)
     end
 
     def test_isPrime_negative
         result = @math.isPrime(8)
-        assert_false(result)
+        assert_equal(false,result)
     end
 
     def test_isPrime_1
         result = @math.isPrime(1)
-        assert_true(result)
+        assert_equal(true,result)
     end
     def test_isPrime_LessThan1
         result = @math.isPrime(0)
-        assert_false(result)
+        assert_equal(false,result)
         result = @math.isPrime(-9)
-        assert_false(result)
+        assert_equal(false,result)
     end
 end
