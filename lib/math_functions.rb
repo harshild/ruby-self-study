@@ -1,6 +1,5 @@
 module Calculator
     class MathLib
-        puts "started"
         def add(a,b)
             return a + b
         end
