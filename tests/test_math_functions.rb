@@ -1,9 +1,10 @@
-require "./lib/Math.rb"
+require "./lib/math_functions.rb"
 require "test/unit"
 
 class TESTMath < Test::Unit::TestCase
+
     def setup
-        @math = MathLib.new()
+        @math = Calculator::MathLib.new()
     end    
 
     def test_add
