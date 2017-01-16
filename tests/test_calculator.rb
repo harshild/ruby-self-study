@@ -1,4 +1,3 @@
-require "./lib/calculator.rb"
 require "test/unit"
 
 class TestCalculator < Test::Unit::TestCase
@@ -8,3 +7,4 @@ class TestCalculator < Test::Unit::TestCase
   end
 
 end
+
