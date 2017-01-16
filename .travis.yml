@@ -1,1 +1,4 @@
 language: ruby
+script: 
+- gem install rspec
+- rake
