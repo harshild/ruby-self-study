@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   ]
   spec.add_dependency "thor"
   spec.add_dependency "rspec-expectations"
-  spec.add_dependency "rspec-mock"
+  spec.add_dependency "rspec-mocks"
   spec.add_dependency "rspec-core"
   spec.email         = ["youremail@yourdomain.com"]
   spec.summary       = %q{Short summary of your project}
