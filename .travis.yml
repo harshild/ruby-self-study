@@ -2,3 +2,4 @@ language: ruby
 script: 
 - gem install rspec
 - rake
+- gem build ./calculator.gemspec
