@@ -2,11 +2,11 @@ require 'thor'
 
 module Calculator
     class CLI < Thor
-        puts "started"
 
         desc "default", "Default Function"
         def default
-            puts "RESULT"
+            say "Welcome"
+            return "Welcome"
         end
 
         default_task :default

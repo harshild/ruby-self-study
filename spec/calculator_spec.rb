@@ -1,4 +1,4 @@
-require 'rspec'
+require "spec_helper"
 
 describe "SampleTest" do
   it "is a sample test" do
