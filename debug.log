@@ -1,0 +1,11 @@
+D, [2017-02-01T10:41:10.867901 #8140] DEBUG -- : input values are 2 and 3
+D, [2017-02-01T10:41:10.875901 #8140] DEBUG -- : input values are 2 and a
+D, [2017-02-01T10:41:52.494901 #9008] DEBUG -- : input values are 2 and a
+I, [2017-02-01T10:41:52.494901 #9008]  INFO -- : invalid value for Integer(): "a"
+D, [2017-02-01T10:41:52.487901 #9008] DEBUG -- : input values are 2 and 3
+D, [2017-02-01T10:44:45.232582 #7948] DEBUG -- : input values are 2 and a
+I, [2017-02-01T10:44:45.232582 #7948]  INFO -- : invalid value for Integer(): "a"
+D, [2017-02-01T10:44:45.226581 #7948] DEBUG -- : input values are 2 and 3
+D, [2017-02-01T11:34:59.006884 #11684] DEBUG -- : input values are 2 and a
+I, [2017-02-01T11:34:59.006884 #11684]  INFO -- : invalid value for Integer(): "a"
+D, [2017-02-01T11:34:58.998884 #11684] DEBUG -- : input values are 2 and 3

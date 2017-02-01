@@ -1,4 +1,5 @@
 require 'thor'
+require 'math_functions.rb'
 
 module Calculator
     class CLI < Thor
@@ -6,14 +7,13 @@ module Calculator
         desc "default", "Default Function"
         def default
             say "Welcome"
-            return "Welcome"
         end
 
         default_task :default
-
         desc "add", "Addition function"
-        def add
-            puts "Provide values "
+        def add(a, b)
+            mathLib = Calculator::MathLib.new()
+            say mathLib.add(a, b)
         end        
 
     end
