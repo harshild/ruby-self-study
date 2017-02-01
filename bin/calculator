@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-puts "hello"
-
 require('CLI')
 
 Calculator::CLI.start
