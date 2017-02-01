@@ -21,7 +21,15 @@ module Calculator
         end
 
         def subs(a,b)
-            return a - b;
+            @logger.debug("input values are #{a} and #{b}")
+            num1 = Integer(a)
+            num2 = Integer(b)
+            rescue ArgumentError => e
+                @logger.info("#{e}")
+                puts "args should only mean numbers"
+                return nil
+            else
+            return num1 - num2
         end
         def isPrime(a)
             if(a<1)

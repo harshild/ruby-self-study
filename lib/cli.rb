@@ -14,7 +14,12 @@ module Calculator
         def add(a, b)
             mathLib = Calculator::MathLib.new()
             say mathLib.add(a, b)
-        end        
+        end    
+        desc "substract", "Substraction function"
+        def substract(a, b)
+            mathLib = Calculator::MathLib.new()
+            say mathLib.subs(a, b)
+        end       
 
     end
 end
