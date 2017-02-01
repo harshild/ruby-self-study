@@ -1,5 +1,5 @@
 module Calculator
-    class Utility
+    class Util
         def is_intVal(value)
            return /\d+/=~ params[:value]
         end
