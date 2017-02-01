@@ -6,7 +6,7 @@ module Calculator
 
         desc "default", "Default Function"
         def default
-            say "Welcome"
+            say "Invalid inputs. Use --help"
         end
 
         default_task :default

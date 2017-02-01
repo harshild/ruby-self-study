@@ -5,24 +5,37 @@ module Calculator
     describe CLI do
         
         describe "default" do
-            let(:output) { capture(:stdout) { subject.default} }
             
             it "returns a welcome message" do
-                expect(output).to eq("Welcome\n")
+                output = capture(:stdout) { subject.default}
+                expect(output).to eq("Invalid inputs. Use --help\n")
             end
         end
 
-        describe "Calcuator" do
-            context "Positive scenarios" do
-                it "Test adding functionality" do
-                     output = capture(:stdout) {subject.add 2, 3}
+        describe "User help" do
+            it "returns a welcome message" do
+                subject.options = {:help => true}
+                output = capture(:stdout) { subject.default}                
+                expect(output).to eq("Invalid inputs. Use --help\n")
+            end
+        end
+
+        describe "Calculator commands" do
+            context "for valid inputs and scenarios" do
+                it "should add two numbers" do
+                    output = capture(:stdout) {subject.add 2, 3}
                     expect(output).to eq("5\n");
                 end
+
+                it "should parse string inputs as numbers" do
+                    output = capture(:stdout) {subject.add '2', '2'}
+                    expect(output).to eq("4\n");
+                end
             end
-            context "Negetive scenarios" do
-                it "Test adding functionality for characters i/p" do
-                        output = capture(:stdout) {subject.add '2', 'a'}
-                        expect(output.chomp).to eq("args should only mean numbers\n");
+            context "for invalid inputs and scenarios" do
+                it "should not parse string inputs if not numbers" do
+                    output = capture(:stdout) {subject.add '2', 'a'}
+                    expect(output.chomp).to eq("args should only mean numbers\n");
                 end
             end
         end

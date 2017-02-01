@@ -22,6 +22,10 @@ RSpec.configure do |config|
     result
   end
 
+  def execCommand(command)
+    capture(:stdout) {command}
+  end
+
   # config.shared_context_metadata_behavior = :apply_to_host_groups
 
 end
