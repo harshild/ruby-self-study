@@ -1,4 +1,4 @@
-require "stringio"
+require 'stringio'
 
 RSpec.configure do |config|
   def capture(stream)
