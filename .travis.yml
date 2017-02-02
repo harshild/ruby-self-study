@@ -1,5 +1,5 @@
 language: ruby
 script: 
-- gem install thor rspec 
+- bundle install
 - rake
 - gem build ./calculator.gemspec

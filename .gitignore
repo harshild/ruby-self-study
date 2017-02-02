@@ -51,3 +51,6 @@ build-iPhoneSimulator/
 
 .vscode/*
 *.log
+.idea/workspace.xml
+*.lock
+*.iml
