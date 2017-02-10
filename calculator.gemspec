@@ -10,14 +10,13 @@ Gem::Specification.new do |spec|
       'Sagar M'
   ]
   spec.add_dependency 'thor'
+  spec.add_dependency 'test-unit'
   spec.add_dependency 'rspec-expectations'
   spec.add_dependency 'rspec-mocks'
   spec.add_dependency 'rspec-core'
   spec.add_dependency 'rspec'
-  spec.email         = ['youremail@yourdomain.com']
-  spec.summary       = %q{Short summary of your project}
-  spec.description   = %q{Longer description of your project.}
-  spec.homepage      = 'http://domainforproject.com/'
+  spec.email         = ['harshil.dhariwal@gmail.com']
+  spec.summary       = %q{J.A.L.P.}
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split("\n")
